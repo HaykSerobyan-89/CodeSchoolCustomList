@@ -12,14 +12,14 @@ enum class ActionEnum(val id: Int, val text: String) {
     EXIT(9, "Exit");
 
     companion object Action {
-        fun start(){
+        @JvmStatic
+        fun start() {
             println("----------------------------------------------")
             println("Please correctly choose action by number ! ! !")
-            for (action in ActionEnum.values()){
+            for (action in ActionEnum.values()) {
                 println("${action.id}. ${action.text}")
             }
             println("----------------------------------------------")
         }
     }
-
 }

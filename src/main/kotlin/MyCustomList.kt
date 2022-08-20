@@ -1,6 +1,6 @@
 import kotlin.random.Random
 
-class MyCustomList(var length: Int = 20, var minValue: Int = -1000, var maxValue: Int = 1000) {
+class MyCustomList(var length: Int = 20, var minValue: Int = -1000, private var maxValue: Int = 1000) {
     private val randomValues = Array(length) { Random.nextInt(minValue, maxValue) }
     val numbersQuantity = HashMap<Int, Int>()
 
