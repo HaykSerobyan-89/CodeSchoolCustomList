@@ -13,9 +13,12 @@ enum class ActionEnum(val id: Int, val text: String) {
 
     companion object Action {
         fun start(){
+            println("----------------------------------------------")
+            println("Please correctly choose action by number ! ! !")
             for (action in ActionEnum.values()){
                 println("${action.id}. ${action.text}")
             }
+            println("----------------------------------------------")
         }
     }
 
